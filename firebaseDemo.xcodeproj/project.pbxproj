@@ -12,7 +12,6 @@
 		EC8D71D02095E91A00BCC39C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC8D71CF2095E91A00BCC39C /* Assets.xcassets */; };
 		EC8D71D32095E91A00BCC39C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC8D71D12095E91A00BCC39C /* LaunchScreen.storyboard */; };
 		EC8D71DB2095E9C100BCC39C /* HelperExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8D71DA2095E9C100BCC39C /* HelperExtensions.swift */; };
-		EC8D71DE2095EAE400BCC39C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC8D71E02095EAE400BCC39C /* Main.storyboard */; };
 		EC8D71E22095ED8D00BCC39C /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8D71E12095ED8D00BCC39C /* InitialViewController.swift */; };
 		EC8D71E42095EDD400BCC39C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8D71E32095EDD400BCC39C /* LoginViewController.swift */; };
 		EC8D71E62095EE0700BCC39C /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8D71E52095EE0700BCC39C /* MenuViewController.swift */; };
@@ -21,6 +20,7 @@
 		EC8D71EC2095EEED00BCC39C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8D71EB2095EEED00BCC39C /* ViewController.swift */; };
 		EC8D71EE2095EFCD00BCC39C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC8D71ED2095EFCD00BCC39C /* GoogleService-Info.plist */; };
 		EC8D71F12095F7A500BCC39C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8D71F02095F7A500BCC39C /* HomeViewController.swift */; };
+		EC8D71F420960FE000BCC39C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC8D71F620960FE000BCC39C /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +33,6 @@
 		EC8D71D22095E91A00BCC39C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC8D71D42095E91A00BCC39C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC8D71DA2095E9C100BCC39C /* HelperExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperExtensions.swift; sourceTree = "<group>"; };
-		EC8D71DF2095EAE400BCC39C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC8D71E12095ED8D00BCC39C /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		EC8D71E32095EDD400BCC39C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EC8D71E52095EE0700BCC39C /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +41,7 @@
 		EC8D71EB2095EEED00BCC39C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EC8D71ED2095EFCD00BCC39C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EC8D71F02095F7A500BCC39C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EC8D71F520960FE000BCC39C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +97,7 @@
 				EC8D71EF2095F08800BCC39C /* Controller */,
 				EC8D71ED2095EFCD00BCC39C /* GoogleService-Info.plist */,
 				EC8D71C82095E91700BCC39C /* AppDelegate.swift */,
-				EC8D71E02095EAE400BCC39C /* Main.storyboard */,
+				EC8D71F620960FE000BCC39C /* Main.storyboard */,
 				EC8D71CF2095E91A00BCC39C /* Assets.xcassets */,
 				EC8D71D12095E91A00BCC39C /* LaunchScreen.storyboard */,
 				EC8D71D42095E91A00BCC39C /* Info.plist */,
@@ -181,9 +181,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC8D71D32095E91A00BCC39C /* LaunchScreen.storyboard in Resources */,
+				EC8D71F420960FE000BCC39C /* Main.storyboard in Resources */,
 				EC8D71EE2095EFCD00BCC39C /* GoogleService-Info.plist in Resources */,
 				EC8D71D02095E91A00BCC39C /* Assets.xcassets in Resources */,
-				EC8D71DE2095EAE400BCC39C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,10 +262,10 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		EC8D71E02095EAE400BCC39C /* Main.storyboard */ = {
+		EC8D71F620960FE000BCC39C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EC8D71DF2095EAE400BCC39C /* Base */,
+				EC8D71F520960FE000BCC39C /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
