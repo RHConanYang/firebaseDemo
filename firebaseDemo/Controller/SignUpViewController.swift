@@ -26,7 +26,6 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.hideKeyboard()
         
         view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
         
@@ -184,7 +183,6 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
                 print("User created!")
                 
                 
-                
                 // 1. Upload the profile image to Firebase Storage
                 
                 self.uploadProfileImage(image) { url in
@@ -201,7 +199,7 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
                                 self.saveProfile(username: username, profileImageURL: url!) { success in
                                     if success {
                                         self.dismiss(animated: true, completion: nil)
-                                    }else {
+                                    } else {
                                         self.resetForm()
                                     }
                                 }
@@ -212,7 +210,6 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
                             }
                         }
                     } else {
-                        // Error unable to upload profile image
                         self.resetForm()
                     }
                     
@@ -222,6 +219,16 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
                 self.resetForm()
             }
         }
+    }
+    
+    func resetForm() {
+        let alert = UIAlertController(title: "Error signing up", message: nil, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+        
+        setContinueButton(enabled: true)
+        continueButton.setTitle("Continue", for: .normal)
+        activityView.stopAnimating()
     }
     
     
@@ -267,16 +274,7 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
             completion(error == nil)
         }
     }
-    func resetForm() {
-        let alert = UIAlertController(title: "error sign up", message: nil, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))
-        self.present(alert, animated: true, completion: nil)
-        
-        
-        setContinueButton(enabled: true)
-        continueButton.setTitle("continue", for: .normal)
-        activityView.stopAnimating()
-    }
+
 }
 
 

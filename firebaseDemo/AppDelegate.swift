@@ -12,7 +12,6 @@ import Firebase
 let primaryColor = UIColor(red: 210/255, green: 109/255, blue: 180/255, alpha: 1)
 let secondaryColor = UIColor(red: 52/255, green: 148/255, blue: 230/255, alpha: 1)
 
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
@@ -20,27 +19,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        FirebaseApp.configure()
         
-        let authListener = Auth.auth().addStateDidChangeListener { (auth, user) in
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        FirebaseApp.configure()
+        // Override point for customization after application launch.
+        
+        Auth.auth().addStateDidChangeListener { auth, user in
             
-            if user != nil {
-                //log user in
+            let storyboard = UIStoryboard(name: "Mains", bundle: nil)
+            
+             if let user = user {
+                
+                UserService.observeUserProfile(user.uid) { userProfile in
+                    UserService.currentUserProfile = userProfile
+                }
+                //
                 let controller = storyboard.instantiateViewController(withIdentifier: "MainTabBarController") as! UITabBarController
                 self.window?.rootViewController = controller
                 self.window?.makeKeyAndVisible()
-                
             } else {
-                //menu screen
+                UserService.currentUserProfile = nil
+                
+                // menu screen
                 let controller = storyboard.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
                 self.window?.rootViewController = controller
                 self.window?.makeKeyAndVisible()
             }
         }
-        return true
         
+        return true
     }
     
     func applicationWillResignActive(_ application: UIApplication) {

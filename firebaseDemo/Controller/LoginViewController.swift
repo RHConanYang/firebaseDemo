@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 import Firebase
 
+
 class LoginViewController:UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var emailField: UITextField!
@@ -21,7 +22,6 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.hideKeyboard()
         
         view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
         
@@ -73,7 +73,7 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func handleDismissButton(_ sender: Any) {
-        self.dismiss(animated: false, completion: nil)
+        self.dismiss(animated: true, completion: nil)
     }
     
     /**
@@ -146,11 +146,11 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
         continueButton.setTitle("", for: .normal)
         activityView.startAnimating()
         
-        Auth.auth().signIn(withEmail: email, password: pass) { (user, error) in
+        Auth.auth().signIn(withEmail: email, password: pass) { user, error in
             if error == nil && user != nil {
                 self.dismiss(animated: false, completion: nil)
-            }else{
-                print("error loging")
+            } else {
+                print("Error logging in: \(error!.localizedDescription)")
                 
                 self.resetForm()
             }
@@ -158,13 +158,13 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
     }
     
     func resetForm() {
-        let alert = UIAlertController(title: "error log in", message: nil, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))
+        let alert = UIAlertController(title: "Error logging in", message: nil, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
         self.present(alert, animated: true, completion: nil)
         
-        
         setContinueButton(enabled: true)
-        continueButton.setTitle("continue", for: .normal)
+        continueButton.setTitle("Continue", for: .normal)
         activityView.stopAnimating()
     }
+    
 }

@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		C8386A10B58F88AED716EA1B /* Pods_firebaseDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 011169853CE55532E3D464C7 /* Pods_firebaseDemo.framework */; };
-		EC32B8752096B1B600EE2B76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC32B8732096B1B600EE2B76 /* Main.storyboard */; };
+		EC2C512E209761BB006A6D5F /* Mains.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC2C5130209761BB006A6D5F /* Mains.storyboard */; };
+		EC2C5131209761C3006A6D5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC2C5133209761C3006A6D5F /* LaunchScreen.storyboard */; };
 		EC8D71C92095E91700BCC39C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8D71C82095E91700BCC39C /* AppDelegate.swift */; };
 		EC8D71D02095E91A00BCC39C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC8D71CF2095E91A00BCC39C /* Assets.xcassets */; };
-		EC8D71D32095E91A00BCC39C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC8D71D12095E91A00BCC39C /* LaunchScreen.storyboard */; };
 		EC8D71DB2095E9C100BCC39C /* HelperExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8D71DA2095E9C100BCC39C /* HelperExtensions.swift */; };
 		EC8D71E22095ED8D00BCC39C /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8D71E12095ED8D00BCC39C /* InitialViewController.swift */; };
 		EC8D71E42095EDD400BCC39C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8D71E32095EDD400BCC39C /* LoginViewController.swift */; };
@@ -23,17 +23,21 @@
 		EC8D71F12095F7A500BCC39C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8D71F02095F7A500BCC39C /* HomeViewController.swift */; };
 		EC8D71FA2096BA7600BCC39C /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8D71F82096BA7600BCC39C /* PostTableViewCell.swift */; };
 		EC8D71FB2096BA7600BCC39C /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC8D71F92096BA7600BCC39C /* PostTableViewCell.xib */; };
+		EC8D71FE2097419400BCC39C /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8D71FD2097419400BCC39C /* Post.swift */; };
+		EC8D720020974C0200BCC39C /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8D71FF20974C0200BCC39C /* UserService.swift */; };
+		EC8D720220974C2C00BCC39C /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8D720120974C2C00BCC39C /* ImageService.swift */; };
+		EC8D720820974D3900BCC39C /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8D720720974D3900BCC39C /* NewPostViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		011169853CE55532E3D464C7 /* Pods_firebaseDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_firebaseDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FAC81CBC704A4913DEBA0FB /* Pods-firebaseDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firebaseDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-firebaseDemo/Pods-firebaseDemo.release.xcconfig"; sourceTree = "<group>"; };
 		9DB22938D95AFD8612C13A82 /* Pods-firebaseDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firebaseDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-firebaseDemo/Pods-firebaseDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		EC32B8742096B1B600EE2B76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../Downloads/SwiftFirebaseTutorials-master/FirebaseApp-3-Auth-State-End/FirebaseApp/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		EC2C512F209761BB006A6D5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Mains.storyboard; sourceTree = "<group>"; };
+		EC2C5132209761C3006A6D5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC8D71C52095E91700BCC39C /* firebaseDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = firebaseDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC8D71C82095E91700BCC39C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC8D71CF2095E91A00BCC39C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EC8D71D22095E91A00BCC39C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC8D71D42095E91A00BCC39C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC8D71DA2095E9C100BCC39C /* HelperExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperExtensions.swift; sourceTree = "<group>"; };
 		EC8D71E12095ED8D00BCC39C /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +50,10 @@
 		EC8D71F02095F7A500BCC39C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		EC8D71F82096BA7600BCC39C /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		EC8D71F92096BA7600BCC39C /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		EC8D71FD2097419400BCC39C /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		EC8D71FF20974C0200BCC39C /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		EC8D720120974C2C00BCC39C /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		EC8D720720974D3900BCC39C /* NewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,17 +106,20 @@
 		EC8D71C72095E91700BCC39C /* firebaseDemo */ = {
 			isa = PBXGroup;
 			children = (
+				EC8D71C82095E91700BCC39C /* AppDelegate.swift */,
+				EC8D71FC2097416B00BCC39C /* Model */,
 				EC8D71F72096BA3D00BCC39C /* Cell */,
 				EC8D71EF2095F08800BCC39C /* Controller */,
 				EC8D71ED2095EFCD00BCC39C /* GoogleService-Info.plist */,
-				EC8D71C82095E91700BCC39C /* AppDelegate.swift */,
+				EC2C5130209761BB006A6D5F /* Mains.storyboard */,
+				EC2C5133209761C3006A6D5F /* LaunchScreen.storyboard */,
 				EC8D71CF2095E91A00BCC39C /* Assets.xcassets */,
-				EC32B8732096B1B600EE2B76 /* Main.storyboard */,
-				EC8D71D12095E91A00BCC39C /* LaunchScreen.storyboard */,
 				EC8D71D42095E91A00BCC39C /* Info.plist */,
 				EC8D71DA2095E9C100BCC39C /* HelperExtensions.swift */,
 				EC8D71E72095EE6800BCC39C /* RoundedWhiteButton.swift */,
 				EC8D71EB2095EEED00BCC39C /* ViewController.swift */,
+				EC8D71FF20974C0200BCC39C /* UserService.swift */,
+				EC8D720120974C2C00BCC39C /* ImageService.swift */,
 			);
 			path = firebaseDemo;
 			sourceTree = "<group>";
@@ -121,6 +132,7 @@
 				EC8D71E12095ED8D00BCC39C /* InitialViewController.swift */,
 				EC8D71E32095EDD400BCC39C /* LoginViewController.swift */,
 				EC8D71F02095F7A500BCC39C /* HomeViewController.swift */,
+				EC8D720720974D3900BCC39C /* NewPostViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -132,6 +144,14 @@
 				EC8D71F92096BA7600BCC39C /* PostTableViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		EC8D71FC2097416B00BCC39C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EC8D71FD2097419400BCC39C /* Post.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,9 +214,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC8D71D32095E91A00BCC39C /* LaunchScreen.storyboard in Resources */,
+				EC2C512E209761BB006A6D5F /* Mains.storyboard in Resources */,
 				EC8D71FB2096BA7600BCC39C /* PostTableViewCell.xib in Resources */,
-				EC32B8752096B1B600EE2B76 /* Main.storyboard in Resources */,
+				EC2C5131209761C3006A6D5F /* LaunchScreen.storyboard in Resources */,
 				EC8D71EE2095EFCD00BCC39C /* GoogleService-Info.plist in Resources */,
 				EC8D71D02095E91A00BCC39C /* Assets.xcassets in Resources */,
 			);
@@ -255,11 +275,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC8D71E42095EDD400BCC39C /* LoginViewController.swift in Sources */,
+				EC8D71FE2097419400BCC39C /* Post.swift in Sources */,
 				EC8D71EA2095EEC700BCC39C /* SignUpViewController.swift in Sources */,
+				EC8D720820974D3900BCC39C /* NewPostViewController.swift in Sources */,
+				EC8D720020974C0200BCC39C /* UserService.swift in Sources */,
 				EC8D71E62095EE0700BCC39C /* MenuViewController.swift in Sources */,
 				EC8D71E22095ED8D00BCC39C /* InitialViewController.swift in Sources */,
 				EC8D71DB2095E9C100BCC39C /* HelperExtensions.swift in Sources */,
 				EC8D71F12095F7A500BCC39C /* HomeViewController.swift in Sources */,
+				EC8D720220974C2C00BCC39C /* ImageService.swift in Sources */,
 				EC8D71C92095E91700BCC39C /* AppDelegate.swift in Sources */,
 				EC8D71FA2096BA7600BCC39C /* PostTableViewCell.swift in Sources */,
 				EC8D71EC2095EEED00BCC39C /* ViewController.swift in Sources */,
@@ -270,18 +294,18 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EC32B8732096B1B600EE2B76 /* Main.storyboard */ = {
+		EC2C5130209761BB006A6D5F /* Mains.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EC32B8742096B1B600EE2B76 /* Base */,
+				EC2C512F209761BB006A6D5F /* Base */,
 			);
-			name = Main.storyboard;
+			name = Mains.storyboard;
 			sourceTree = "<group>";
 		};
-		EC8D71D12095E91A00BCC39C /* LaunchScreen.storyboard */ = {
+		EC2C5133209761C3006A6D5F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EC8D71D22095E91A00BCC39C /* Base */,
+				EC2C5132209761C3006A6D5F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
