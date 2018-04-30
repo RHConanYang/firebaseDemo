@@ -11,11 +11,30 @@ import Foundation
 import Firebase
 
 class HomeViewController: UIViewController {
+    var tableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        tableView = UITableView(frame: view.bounds, style: .plain)
+        tableView.backgroundColor = UIColor.blue
+        view.addSubview(tableView)
+        
+        
+        var layoutGuide:UILayoutGuide
+        if #available(iOS 11.0, *){
+            layoutGuide = view.safeAreaLayoutGuide
+        }else {
+            layoutGuide = view.layoutMarginsGuide
+        }
+        
+        tableView.leadingAnchor.constraint(equalTo: layoutGuide.leadingAnchor).isActive = true
+        tableView.topAnchor.constraint(equalTo: layoutGuide.topAnchor).isActive = true
+        tableView.trailingAnchor.constraint(equalTo: layoutGuide.trailingAnchor).isActive = true
+        tableView.bottomAnchor.constraint(equalTo: layoutGuide.bottomAnchor).isActive = true
+        
+        
+        
     }
     
     @IBAction func handleLogout(_ target: UIBarButtonItem) {

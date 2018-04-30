@@ -21,6 +21,8 @@
 		EC8D71EC2095EEED00BCC39C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8D71EB2095EEED00BCC39C /* ViewController.swift */; };
 		EC8D71EE2095EFCD00BCC39C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC8D71ED2095EFCD00BCC39C /* GoogleService-Info.plist */; };
 		EC8D71F12095F7A500BCC39C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8D71F02095F7A500BCC39C /* HomeViewController.swift */; };
+		EC8D71FA2096BA7600BCC39C /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8D71F82096BA7600BCC39C /* PostTableViewCell.swift */; };
+		EC8D71FB2096BA7600BCC39C /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC8D71F92096BA7600BCC39C /* PostTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		EC8D71EB2095EEED00BCC39C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EC8D71ED2095EFCD00BCC39C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EC8D71F02095F7A500BCC39C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EC8D71F82096BA7600BCC39C /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		EC8D71F92096BA7600BCC39C /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,7 @@
 		EC8D71C72095E91700BCC39C /* firebaseDemo */ = {
 			isa = PBXGroup;
 			children = (
+				EC8D71F72096BA3D00BCC39C /* Cell */,
 				EC8D71EF2095F08800BCC39C /* Controller */,
 				EC8D71ED2095EFCD00BCC39C /* GoogleService-Info.plist */,
 				EC8D71C82095E91700BCC39C /* AppDelegate.swift */,
@@ -118,6 +123,15 @@
 				EC8D71F02095F7A500BCC39C /* HomeViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		EC8D71F72096BA3D00BCC39C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EC8D71F82096BA7600BCC39C /* PostTableViewCell.swift */,
+				EC8D71F92096BA7600BCC39C /* PostTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC8D71D32095E91A00BCC39C /* LaunchScreen.storyboard in Resources */,
+				EC8D71FB2096BA7600BCC39C /* PostTableViewCell.xib in Resources */,
 				EC32B8752096B1B600EE2B76 /* Main.storyboard in Resources */,
 				EC8D71EE2095EFCD00BCC39C /* GoogleService-Info.plist in Resources */,
 				EC8D71D02095E91A00BCC39C /* Assets.xcassets in Resources */,
@@ -246,6 +261,7 @@
 				EC8D71DB2095E9C100BCC39C /* HelperExtensions.swift in Sources */,
 				EC8D71F12095F7A500BCC39C /* HomeViewController.swift in Sources */,
 				EC8D71C92095E91700BCC39C /* AppDelegate.swift in Sources */,
+				EC8D71FA2096BA7600BCC39C /* PostTableViewCell.swift in Sources */,
 				EC8D71EC2095EEED00BCC39C /* ViewController.swift in Sources */,
 				EC8D71E82095EE6800BCC39C /* RoundedWhiteButton.swift in Sources */,
 			);
