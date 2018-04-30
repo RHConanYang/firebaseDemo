@@ -10,25 +10,28 @@ import Foundation
 import UIKit
 import Firebase
 
+
 class NewPostViewController:UIViewController, UITextViewDelegate {
     
     @IBOutlet weak var textView:UITextView!
     @IBOutlet weak var placeHolderLabel: UILabel!
     @IBOutlet weak var cancelButton: UIBarButtonItem!
-    @IBOutlet weak var doneButton: UIButton!
+
+
     
+
     @IBAction func handlePostButton() {
         
-        guard let userProfile = UserService.currentUserProfile else { return }
+        let userProfile = UserService.currentUserProfile
         // Firebase code here
-        
+        print("11111111111\(String(describing: userProfile))")
         let postRef = Database.database().reference().child("posts").childByAutoId()
         
         let postObject = [
             "author": [
-                "uid": userProfile.uid,
-                "username": userProfile.username,
-                "photoURL": userProfile.photoURL.absoluteString
+                "uid": userProfile?.uid,
+                "username": userProfile?.username,
+                "photoURL": userProfile?.photoURL.absoluteString
             ],
             "text": textView.text,
             "timestamp": [".sv":"timestamp"]
@@ -39,6 +42,7 @@ class NewPostViewController:UIViewController, UITextViewDelegate {
                 self.dismiss(animated: true, completion: nil)
             } else {
                 // Handle the error
+                print("error")
             }
         })
     }
@@ -59,11 +63,7 @@ class NewPostViewController:UIViewController, UITextViewDelegate {
         super.viewDidLoad()
         
         cancelButton.tintColor = secondaryColor
-        
-        doneButton.backgroundColor = secondaryColor
-        doneButton.layer.cornerRadius = doneButton.bounds.height / 2
-        doneButton.clipsToBounds = true
-        
+
         textView.delegate = self
         
     }

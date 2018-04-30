@@ -15,7 +15,6 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
-    @IBOutlet weak var dismissButton: UIButton!
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var tapToChangeProfileButton: UIButton!
     
@@ -97,7 +96,14 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
             return .lightContent
         }
     }
-    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        DispatchQueue.main.async {
+            
+            self.continueButton.addTarget(self, action: #selector(self.handleSignUp), for: .touchUpInside)
+            
+        }
+    }
     @IBAction func handleDismissButton(_ sender: Any) {
         self.dismiss(animated: false, completion: nil)
     }
@@ -199,7 +205,9 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
                                 
                                 self.saveProfile(username: username, profileImageURL: url!) { success in
                                     if success {
-                                        self.dismiss(animated: true, completion: nil)
+                                        let storyboard = UIStoryboard(name: "Mains", bundle: nil)
+                                        let vc = storyboard.instantiateViewController(withIdentifier: "MainTabBarController" ) as! UITabBarController
+                                        self.present(vc, animated: true, completion: nil)
                                     } else {
                                         self.resetForm()
                                     }

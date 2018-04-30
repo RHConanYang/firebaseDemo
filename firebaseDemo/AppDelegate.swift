@@ -21,28 +21,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         FirebaseApp.configure()
-        // Override point for customization after application launch.
         
-        Auth.auth().addStateDidChangeListener { auth, user in
-            
-            let storyboard = UIStoryboard(name: "Mains", bundle: nil)
-            
+        
+        let storyboard = UIStoryboard(name: "Mains", bundle: nil)
+        
+        let authListener = Auth.auth().addStateDidChangeListener { auth, user in
+
              if let user = user {
-                
                 UserService.observeUserProfile(user.uid) { userProfile in
                     UserService.currentUserProfile = userProfile
                 }
-                //
-                let controller = storyboard.instantiateViewController(withIdentifier: "MainTabBarController") as! UITabBarController
-                self.window?.rootViewController = controller
-                self.window?.makeKeyAndVisible()
             } else {
                 UserService.currentUserProfile = nil
-                
-                // menu screen
-                let controller = storyboard.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
+                let controller = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
                 self.window?.rootViewController = controller
-                self.window?.makeKeyAndVisible()
             }
         }
         

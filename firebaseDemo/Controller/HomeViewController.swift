@@ -18,6 +18,8 @@ class HomeViewController:UIViewController, UITableViewDelegate, UITableViewDataS
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         tableView = UITableView(frame: view.bounds, style: .plain)
         
         let cellNib = UINib(nibName: "PostTableViewCell", bundle: nil)

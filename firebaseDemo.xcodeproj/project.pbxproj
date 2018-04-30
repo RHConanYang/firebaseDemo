@@ -15,7 +15,6 @@
 		EC8D71DB2095E9C100BCC39C /* HelperExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8D71DA2095E9C100BCC39C /* HelperExtensions.swift */; };
 		EC8D71E22095ED8D00BCC39C /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8D71E12095ED8D00BCC39C /* InitialViewController.swift */; };
 		EC8D71E42095EDD400BCC39C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8D71E32095EDD400BCC39C /* LoginViewController.swift */; };
-		EC8D71E62095EE0700BCC39C /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8D71E52095EE0700BCC39C /* MenuViewController.swift */; };
 		EC8D71E82095EE6800BCC39C /* RoundedWhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8D71E72095EE6800BCC39C /* RoundedWhiteButton.swift */; };
 		EC8D71EA2095EEC700BCC39C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8D71E92095EEC700BCC39C /* SignUpViewController.swift */; };
 		EC8D71EC2095EEED00BCC39C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8D71EB2095EEED00BCC39C /* ViewController.swift */; };
@@ -42,7 +41,6 @@
 		EC8D71DA2095E9C100BCC39C /* HelperExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperExtensions.swift; sourceTree = "<group>"; };
 		EC8D71E12095ED8D00BCC39C /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		EC8D71E32095EDD400BCC39C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		EC8D71E52095EE0700BCC39C /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		EC8D71E72095EE6800BCC39C /* RoundedWhiteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedWhiteButton.swift; sourceTree = "<group>"; };
 		EC8D71E92095EEC700BCC39C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		EC8D71EB2095EEED00BCC39C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -128,7 +126,6 @@
 			isa = PBXGroup;
 			children = (
 				EC8D71E92095EEC700BCC39C /* SignUpViewController.swift */,
-				EC8D71E52095EE0700BCC39C /* MenuViewController.swift */,
 				EC8D71E12095ED8D00BCC39C /* InitialViewController.swift */,
 				EC8D71E32095EDD400BCC39C /* LoginViewController.swift */,
 				EC8D71F02095F7A500BCC39C /* HomeViewController.swift */,
@@ -279,7 +276,6 @@
 				EC8D71EA2095EEC700BCC39C /* SignUpViewController.swift in Sources */,
 				EC8D720820974D3900BCC39C /* NewPostViewController.swift in Sources */,
 				EC8D720020974C0200BCC39C /* UserService.swift in Sources */,
-				EC8D71E62095EE0700BCC39C /* MenuViewController.swift in Sources */,
 				EC8D71E22095ED8D00BCC39C /* InitialViewController.swift in Sources */,
 				EC8D71DB2095E9C100BCC39C /* HelperExtensions.swift in Sources */,
 				EC8D71F12095F7A500BCC39C /* HomeViewController.swift in Sources */,

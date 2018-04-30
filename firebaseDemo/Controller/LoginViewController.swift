@@ -15,7 +15,7 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
-    @IBOutlet weak var dismissButton: UIButton!
+
     
     var continueButton:RoundedWhiteButton!
     var activityView:UIActivityIndicatorView!
@@ -23,6 +23,7 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboard()
+
         
         view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
         
@@ -33,7 +34,6 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
         continueButton.center = CGPoint(x: view.center.x, y: view.frame.height - continueButton.frame.height - 24)
         continueButton.highlightedColor = UIColor(white: 1.0, alpha: 1.0)
         continueButton.defaultColor = UIColor.white
-        continueButton.addTarget(self, action: #selector(handleSignIn), for: .touchUpInside)
         continueButton.alpha = 0.5
         view.addSubview(continueButton)
         setContinueButton(enabled: false)
@@ -59,6 +59,14 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
         NotificationCenter.default.addObserver(self, selector:#selector(keyboardWillAppear), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         
     }
+    override func viewDidAppear(_ animated: Bool) {
+        
+        DispatchQueue.main.async {
+            
+            self.continueButton.addTarget(self, action: #selector(self.handleSignIn), for: .touchUpInside)
+            
+        }
+    }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
@@ -72,10 +80,7 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
             return .lightContent
         }
     }
-    
-    @IBAction func handleDismissButton(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-    }
+
     
     /**
      Adjusts the center of the **continueButton** above the keyboard.
@@ -149,7 +154,11 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
         
         Auth.auth().signIn(withEmail: email, password: pass) { user, error in
             if error == nil && user != nil {
-                self.dismiss(animated: false, completion: nil)
+//                self.dismiss(animated: false, completion: nil)
+                print("success!")
+                let storyboard = UIStoryboard(name: "Mains", bundle: nil)
+                let vc = storyboard.instantiateViewController(withIdentifier: "MainTabBarController" ) as! UITabBarController
+                self.present(vc, animated: true, completion: nil)
             } else {
                 print("Error logging in: \(error!.localizedDescription)")
                 

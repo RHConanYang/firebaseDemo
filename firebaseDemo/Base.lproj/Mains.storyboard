@@ -12,99 +12,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Menu View Controller-->
-        <scene sceneID="Z2q-yC-kV0">
-            <objects>
-                <viewController storyboardIdentifier="MenuViewController" id="0Hw-EF-rLz" customClass="MenuViewController" customModule="firebaseDemo" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="iRK-c8-tPd"/>
-                        <viewControllerLayoutGuide type="bottom" id="gbr-MV-We0"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="M2P-0A-WHL">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Firebase Demo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZN-Fr-ZMh">
-                                <rect key="frame" x="104" y="294.5" width="168" height="29"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By Replicode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLo-66-hcd">
-                                <rect key="frame" x="130.5" y="331.5" width="114" height="24"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DF3-Ub-r8A" customClass="RoundedWhiteButton" customModule="firebaseDemo" customModuleProvider="target">
-                                <rect key="frame" x="24" y="499" width="327" height="64"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="64" id="Muo-w0-rKM"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
-                                <state key="normal" title="Log In">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Gzf-aY-Irw" kind="show" id="IBH-5j-ASq"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cG9-g3-oLn" customClass="RoundedWhiteButton" customModule="firebaseDemo" customModuleProvider="target">
-                                <rect key="frame" x="24" y="579" width="327" height="64"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="64" id="nzO-tu-dSe"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
-                                <state key="normal" title="Sign Up">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="wie-nZ-YWG" kind="show" id="Xve-p8-Ir4"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="firebaselogo" translatesAutoresizingMaskIntoConstraints="NO" id="BUf-rb-WLe">
-                                <rect key="frame" x="137" y="170.5" width="100" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="BUf-rb-WLe" secondAttribute="height" multiplier="1:1" id="OZ0-NL-VMi"/>
-                                    <constraint firstAttribute="height" constant="100" id="jY8-tP-xjW"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="DF3-Ub-r8A" firstAttribute="leading" secondItem="M2P-0A-WHL" secondAttribute="leading" constant="24" id="3Df-Pe-dFi"/>
-                            <constraint firstItem="cG9-g3-oLn" firstAttribute="top" secondItem="DF3-Ub-r8A" secondAttribute="bottom" constant="16" id="5ae-ls-lxm"/>
-                            <constraint firstItem="eLo-66-hcd" firstAttribute="centerY" secondItem="JHb-Nv-cYs" secondAttribute="centerY" id="7r9-dQ-1ar"/>
-                            <constraint firstItem="eLo-66-hcd" firstAttribute="top" secondItem="cZN-Fr-ZMh" secondAttribute="bottom" constant="8" id="Bku-l8-16T"/>
-                            <constraint firstAttribute="trailing" secondItem="DF3-Ub-r8A" secondAttribute="trailing" constant="24" id="NDT-Jw-ku1"/>
-                            <constraint firstItem="BUf-rb-WLe" firstAttribute="centerX" secondItem="JHb-Nv-cYs" secondAttribute="centerX" id="T7o-s8-S6E"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="cG9-g3-oLn" secondAttribute="bottom" constant="24" id="VL8-tL-Tu4"/>
-                            <constraint firstItem="cG9-g3-oLn" firstAttribute="leading" secondItem="M2P-0A-WHL" secondAttribute="leading" constant="24" id="WR8-k2-WAV"/>
-                            <constraint firstAttribute="trailing" secondItem="cG9-g3-oLn" secondAttribute="trailing" constant="24" id="fbS-mf-iJH"/>
-                            <constraint firstItem="eLo-66-hcd" firstAttribute="centerX" secondItem="M2P-0A-WHL" secondAttribute="centerX" id="iRA-fQ-Apa"/>
-                            <constraint firstItem="cZN-Fr-ZMh" firstAttribute="centerX" secondItem="M2P-0A-WHL" secondAttribute="centerX" id="q39-rm-JGU"/>
-                            <constraint firstItem="cZN-Fr-ZMh" firstAttribute="top" secondItem="BUf-rb-WLe" secondAttribute="bottom" constant="24" id="tJD-br-Gsb"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="JHb-Nv-cYs"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="iWA-P7-a7I">
-                        <barButtonItem key="backBarButtonItem" title=" " id="pOr-K7-N5d"/>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="loginButton" destination="DF3-Ub-r8A" id="W9N-oJ-mvd"/>
-                        <outlet property="signupButton" destination="cG9-g3-oLn" id="g78-As-58I"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ctX-aG-fB5" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2734" y="125"/>
-        </scene>
         <!--Login View Controller-->
         <scene sceneID="k2v-ny-gh5">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Gzf-aY-Irw" customClass="LoginViewController" customModule="firebaseDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Gzf-aY-Irw" customClass="LoginViewController" customModule="firebaseDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="glc-UQ-TXh"/>
                         <viewControllerLayoutGuide type="bottom" id="UG1-6m-aEI"/>
@@ -192,11 +103,23 @@
                                                     <constraint firstItem="4cB-ai-Uk8" firstAttribute="top" secondItem="0if-Nc-wcD" secondAttribute="bottom" constant="16" id="zlu-0H-K7u"/>
                                                 </constraints>
                                             </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsa-r1-2dZ">
+                                                <rect key="frame" x="0.0" y="657" width="375" height="30"/>
+                                                <state key="normal" title="Don't have an account?">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="wie-nZ-YWG" kind="presentation" id="UKl-hl-Xsd"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="fsa-r1-2dZ" secondAttribute="bottom" id="5vV-5B-vQf"/>
                                             <constraint firstItem="HPr-fP-Ghl" firstAttribute="leading" secondItem="7Gb-fa-797" secondAttribute="leading" constant="36" id="UQg-1i-Aah"/>
+                                            <constraint firstItem="fsa-r1-2dZ" firstAttribute="leading" secondItem="7Gb-fa-797" secondAttribute="leading" id="VwS-Jw-jpn"/>
                                             <constraint firstItem="HPr-fP-Ghl" firstAttribute="top" secondItem="7Gb-fa-797" secondAttribute="top" constant="44" id="aCO-HR-Ouo"/>
+                                            <constraint firstAttribute="trailing" secondItem="fsa-r1-2dZ" secondAttribute="trailing" id="sJf-Uj-2pf"/>
                                             <constraint firstAttribute="trailing" secondItem="HPr-fP-Ghl" secondAttribute="trailing" constant="36" id="wPy-c4-WNb"/>
                                         </constraints>
                                     </view>
@@ -208,35 +131,19 @@
                                     <constraint firstItem="7Gb-fa-797" firstAttribute="top" secondItem="y9W-KN-WFI" secondAttribute="top" id="THg-3d-9wN"/>
                                 </constraints>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpD-rs-QKD">
-                                <rect key="frame" x="0.0" y="20" width="44" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="dpD-rs-QKD" secondAttribute="height" multiplier="1:1" id="9vH-Ef-7Gs"/>
-                                    <constraint firstAttribute="height" constant="44" id="O4j-MO-8jf"/>
-                                </constraints>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" image="backArrow"/>
-                                <connections>
-                                    <action selector="handleDismissButton:" destination="Gzf-aY-Irw" eventType="touchUpInside" id="aRp-9Y-b3x"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="dpD-rs-QKD" firstAttribute="leading" secondItem="Ql9-tN-f5h" secondAttribute="leading" id="46V-Me-zcF"/>
                             <constraint firstItem="y9W-KN-WFI" firstAttribute="leading" secondItem="ROV-j0-jtL" secondAttribute="leading" id="F9S-oX-3pD"/>
                             <constraint firstAttribute="topMargin" secondItem="y9W-KN-WFI" secondAttribute="top" id="VjV-Pp-6On"/>
                             <constraint firstItem="7Gb-fa-797" firstAttribute="height" secondItem="ROV-j0-jtL" secondAttribute="height" constant="20" id="YSF-KW-FTE"/>
                             <constraint firstAttribute="bottomMargin" secondItem="y9W-KN-WFI" secondAttribute="bottom" id="h73-Vo-lrY"/>
                             <constraint firstItem="7Gb-fa-797" firstAttribute="width" secondItem="ROV-j0-jtL" secondAttribute="width" id="isH-bL-K4m"/>
                             <constraint firstAttribute="trailing" secondItem="y9W-KN-WFI" secondAttribute="trailing" id="kom-Hz-uYf"/>
-                            <constraint firstItem="dpD-rs-QKD" firstAttribute="top" secondItem="Ql9-tN-f5h" secondAttribute="top" id="msR-wh-dYc"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dpD-rs-QKD" secondAttribute="trailing" constant="20" symbolic="YES" id="nlM-kb-W01"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ql9-tN-f5h"/>
                     </view>
                     <connections>
-                        <outlet property="dismissButton" destination="dpD-rs-QKD" id="WYg-Tl-BhJ"/>
                         <outlet property="emailField" destination="urX-Do-eiR" id="7jd-mq-WOf"/>
                         <outlet property="passwordField" destination="Xlq-r8-dSG" id="A8h-uB-pQy"/>
                     </connections>
@@ -383,11 +290,23 @@
                                                     <constraint firstItem="nyO-MW-6Dt" firstAttribute="top" secondItem="oaQ-4f-6ug" secondAttribute="bottom" constant="18" id="ykc-Q0-FHk"/>
                                                 </constraints>
                                             </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9VG-bq-fQm">
+                                                <rect key="frame" x="0.0" y="657" width="375" height="30"/>
+                                                <state key="normal" title="Already have account? Sign In">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="Gzf-aY-Irw" kind="presentation" id="mmg-wX-eVc"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="9VG-bq-fQm" secondAttribute="bottom" id="4BQ-WO-2L6"/>
                                             <constraint firstItem="cl1-Ux-4gK" firstAttribute="leading" secondItem="5J0-tp-Mav" secondAttribute="leading" constant="36" id="9GY-oa-vNl"/>
                                             <constraint firstAttribute="trailing" secondItem="cl1-Ux-4gK" secondAttribute="trailing" constant="36" id="9ne-rk-V50"/>
+                                            <constraint firstAttribute="trailing" secondItem="9VG-bq-fQm" secondAttribute="trailing" id="BIR-CK-tEU"/>
+                                            <constraint firstItem="9VG-bq-fQm" firstAttribute="leading" secondItem="5J0-tp-Mav" secondAttribute="leading" id="Sc8-ep-cP1"/>
                                             <constraint firstItem="cl1-Ux-4gK" firstAttribute="top" secondItem="5J0-tp-Mav" secondAttribute="top" constant="44" id="ypj-WQ-w5X"/>
                                         </constraints>
                                     </view>
@@ -399,17 +318,6 @@
                                     <constraint firstItem="5J0-tp-Mav" firstAttribute="leading" secondItem="7OK-fR-aKQ" secondAttribute="leading" id="pbf-Ml-5sS"/>
                                 </constraints>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uW6-oV-FlT">
-                                <rect key="frame" x="0.0" y="20" width="44" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="SND-6s-LjN"/>
-                                </constraints>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" image="backArrow"/>
-                                <connections>
-                                    <action selector="handleDismissButton:" destination="wie-nZ-YWG" eventType="touchUpInside" id="7Qd-eh-18H"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -417,16 +325,12 @@
                             <constraint firstItem="5J0-tp-Mav" firstAttribute="height" secondItem="039-am-QbD" secondAttribute="height" constant="20" id="EpM-s2-WnF"/>
                             <constraint firstAttribute="trailing" secondItem="7OK-fR-aKQ" secondAttribute="trailing" id="ICS-HA-n9n"/>
                             <constraint firstItem="7OK-fR-aKQ" firstAttribute="leading" secondItem="039-am-QbD" secondAttribute="leading" id="JEm-Pz-hdY"/>
-                            <constraint firstItem="uW6-oV-FlT" firstAttribute="top" secondItem="fqS-wN-jSf" secondAttribute="top" id="c9l-hR-CV1"/>
-                            <constraint firstItem="uW6-oV-FlT" firstAttribute="width" secondItem="uW6-oV-FlT" secondAttribute="height" multiplier="1:1" id="kv9-To-nad"/>
                             <constraint firstItem="7OK-fR-aKQ" firstAttribute="top" secondItem="039-am-QbD" secondAttribute="topMargin" id="uaM-Ab-7NB"/>
-                            <constraint firstItem="uW6-oV-FlT" firstAttribute="leading" secondItem="fqS-wN-jSf" secondAttribute="leading" id="wy4-dD-zK7"/>
                             <constraint firstItem="5J0-tp-Mav" firstAttribute="width" secondItem="039-am-QbD" secondAttribute="width" id="yaw-Da-GLa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fqS-wN-jSf"/>
                     </view>
                     <connections>
-                        <outlet property="dismissButton" destination="uW6-oV-FlT" id="dBc-ti-hRE"/>
                         <outlet property="emailField" destination="E6e-Pl-fFt" id="JGC-r0-xbU"/>
                         <outlet property="passwordField" destination="L0s-38-Wyq" id="dqG-12-L66"/>
                         <outlet property="profileImageView" destination="nyO-MW-6Dt" id="bq9-h8-AnI"/>
@@ -436,7 +340,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TaG-Xx-sJp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3540" y="508.69565217391306"/>
+            <point key="canvasLocation" x="2857" y="612"/>
         </scene>
         <!--Home-->
         <scene sceneID="yFb-tb-0hM">
@@ -503,13 +407,13 @@
                         <viewLayoutGuide key="safeArea" id="5LX-2R-jfZ"/>
                     </view>
                     <navigationItem key="navigationItem" id="NKr-hC-DUg">
-                        <barButtonItem key="leftBarButtonItem" image="delete" style="done" id="Nww-Rq-s5c">
+                        <barButtonItem key="leftBarButtonItem" image="delete" style="plain" id="Nww-Rq-s5c">
                             <color key="tintColor" red="0.59400786400000005" green="0.85299750600000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <connections>
                                 <action selector="handleCancelButton" destination="I0f-Y9-5pE" id="8Rq-5o-eLn"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" style="done" id="oup-Ob-XZb">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="oup-Ob-XZb">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ktf-U8-RUI">
                                 <rect key="frame" x="276" y="4.5" width="83" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -518,15 +422,14 @@
                                 <state key="normal" title="Post">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="handlePostButton" destination="I0f-Y9-5pE" eventType="touchUpInside" id="F90-FP-ip3"/>
+                                </connections>
                             </button>
-                            <connections>
-                                <action selector="handlePostButton" destination="I0f-Y9-5pE" id="V1K-cH-A5Q"/>
-                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="cancelButton" destination="Nww-Rq-s5c" id="4ek-tE-ES4"/>
-                        <outlet property="doneButton" destination="ktf-U8-RUI" id="y3A-Ck-9Ui"/>
                         <outlet property="placeHolderLabel" destination="zwJ-Fn-c2J" id="oun-cW-GWk"/>
                         <outlet property="textView" destination="edF-Cu-Qha" id="E3a-0p-gM7"/>
                     </connections>
@@ -580,7 +483,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="kp7-zS-Gzg"/>
                     <connections>
-                        <segue destination="0Hw-EF-rLz" kind="show" identifier="toMenuScreen" animates="NO" id="30J-y2-sWk"/>
+                        <segue destination="Gzf-aY-Irw" kind="show" identifier="toMenuScreen" id="ZsL-DW-yhH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mNy-QR-Zzi" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -641,13 +544,14 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vWe-dG-dFu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6454" y="-367"/>
+            <point key="canvasLocation" x="6762" y="-333"/>
         </scene>
     </scenes>
     <resources>
-        <image name="backArrow" width="25" height="25"/>
         <image name="delete" width="24" height="24"/>
-        <image name="firebaselogo" width="180" height="180"/>
         <image name="userIcon" width="50" height="50"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="mmg-wX-eVc"/>
+    </inferredMetricsTieBreakers>
 </document>
