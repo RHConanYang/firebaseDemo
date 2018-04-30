@@ -21,6 +21,7 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboard()
         
         view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
         
@@ -150,7 +151,20 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
                 self.dismiss(animated: false, completion: nil)
             }else{
                 print("error loging")
+                
+                self.resetForm()
             }
         }
+    }
+    
+    func resetForm() {
+        let alert = UIAlertController(title: "error log in", message: nil, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+        
+        
+        setContinueButton(enabled: true)
+        continueButton.setTitle("continue", for: .normal)
+        activityView.stopAnimating()
     }
 }

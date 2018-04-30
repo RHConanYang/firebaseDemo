@@ -12,7 +12,6 @@ import Firebase
 class MenuViewController: UIViewController {
     
     @IBOutlet weak var loginButton: UIButton!
-    
     @IBOutlet weak var signupButton: UIButton!
     
     override func viewDidLoad() {
@@ -34,12 +33,10 @@ class MenuViewController: UIViewController {
         
         
     }
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        if Auth.auth().currentUser != nil {
-            self.performSegue(withIdentifier: "toHomeScreen", sender: self)
-        }
-    }
+//    override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(animated)
+//
+//    }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         get {

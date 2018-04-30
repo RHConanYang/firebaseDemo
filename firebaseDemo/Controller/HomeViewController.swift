@@ -20,7 +20,7 @@ class HomeViewController: UIViewController {
     
     @IBAction func handleLogout(_ target: UIBarButtonItem) {
         try! Auth.auth().signOut()
-        self.dismiss(animated: false, completion: nil)
+
     }
 
     

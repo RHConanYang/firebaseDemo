@@ -26,6 +26,7 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboard()
         
         view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
         
@@ -200,21 +201,25 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
                                 self.saveProfile(username: username, profileImageURL: url!) { success in
                                     if success {
                                         self.dismiss(animated: true, completion: nil)
+                                    }else {
+                                        self.resetForm()
                                     }
                                 }
                                 
                             } else {
                                 print("Error: \(error!.localizedDescription)")
+                                self.resetForm()
                             }
                         }
                     } else {
                         // Error unable to upload profile image
+                        self.resetForm()
                     }
                     
                 }
                 
             } else {
-                print("Error: \(error!.localizedDescription)")
+                self.resetForm()
             }
         }
     }
@@ -231,16 +236,20 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
         metaData.contentType = "image/jpg"
         
         storageRef.putData(imageData, metadata: metaData) { metaData, error in
-            if error == nil, metaData != nil {
-                if let url = metaData?.downloadURL() {
-                    completion(url)
-                } else {
-                    completion(nil)
-                }
-                // success!
+            if error != nil {
+                print("cant upload")
+                
             } else {
-                // failed
-                completion(nil)
+                print("upload")
+                storageRef.downloadURL(completion: { (url, error) in
+                    if error != nil {
+                        print("error!")
+                        return
+                    }
+                    if url != nil {
+                        completion(url)
+                    }
+                })
             }
         }
     }
@@ -257,6 +266,16 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
         databaseRef.setValue(userObject) { error, ref in
             completion(error == nil)
         }
+    }
+    func resetForm() {
+        let alert = UIAlertController(title: "error sign up", message: nil, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+        
+        
+        setContinueButton(enabled: true)
+        continueButton.setTitle("continue", for: .normal)
+        activityView.stopAnimating()
     }
 }
 
