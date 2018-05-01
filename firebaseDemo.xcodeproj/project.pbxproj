@@ -26,6 +26,9 @@
 		EC8D720020974C0200BCC39C /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8D71FF20974C0200BCC39C /* UserService.swift */; };
 		EC8D720220974C2C00BCC39C /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8D720120974C2C00BCC39C /* ImageService.swift */; };
 		EC8D720820974D3900BCC39C /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8D720720974D3900BCC39C /* NewPostViewController.swift */; };
+		ECF4945420989FD100632563 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF4945320989FD100632563 /* ProfileViewController.swift */; };
+		ECF494562098A11C00632563 /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF494552098A11C00632563 /* PersonTableViewCell.swift */; };
+		ECF494582098A3CA00632563 /* PersonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECF494572098A3CA00632563 /* PersonTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +55,9 @@
 		EC8D71FF20974C0200BCC39C /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		EC8D720120974C2C00BCC39C /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
 		EC8D720720974D3900BCC39C /* NewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
+		ECF4945320989FD100632563 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		ECF494552098A11C00632563 /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
+		ECF494572098A3CA00632563 /* PersonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +136,7 @@
 				EC8D71E32095EDD400BCC39C /* LoginViewController.swift */,
 				EC8D71F02095F7A500BCC39C /* HomeViewController.swift */,
 				EC8D720720974D3900BCC39C /* NewPostViewController.swift */,
+				ECF4945320989FD100632563 /* ProfileViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -139,6 +146,8 @@
 			children = (
 				EC8D71F82096BA7600BCC39C /* PostTableViewCell.swift */,
 				EC8D71F92096BA7600BCC39C /* PostTableViewCell.xib */,
+				ECF494572098A3CA00632563 /* PersonTableViewCell.xib */,
+				ECF494552098A11C00632563 /* PersonTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -214,6 +223,7 @@
 				EC2C512E209761BB006A6D5F /* Mains.storyboard in Resources */,
 				EC8D71FB2096BA7600BCC39C /* PostTableViewCell.xib in Resources */,
 				EC2C5131209761C3006A6D5F /* LaunchScreen.storyboard in Resources */,
+				ECF494582098A3CA00632563 /* PersonTableViewCell.xib in Resources */,
 				EC8D71EE2095EFCD00BCC39C /* GoogleService-Info.plist in Resources */,
 				EC8D71D02095E91A00BCC39C /* Assets.xcassets in Resources */,
 			);
@@ -275,7 +285,9 @@
 				EC8D71FE2097419400BCC39C /* Post.swift in Sources */,
 				EC8D71EA2095EEC700BCC39C /* SignUpViewController.swift in Sources */,
 				EC8D720820974D3900BCC39C /* NewPostViewController.swift in Sources */,
+				ECF4945420989FD100632563 /* ProfileViewController.swift in Sources */,
 				EC8D720020974C0200BCC39C /* UserService.swift in Sources */,
+				ECF494562098A11C00632563 /* PersonTableViewCell.swift in Sources */,
 				EC8D71E22095ED8D00BCC39C /* InitialViewController.swift in Sources */,
 				EC8D71DB2095E9C100BCC39C /* HelperExtensions.swift in Sources */,
 				EC8D71F12095F7A500BCC39C /* HomeViewController.swift in Sources */,

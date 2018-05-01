@@ -60,12 +60,21 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
         
     }
     override func viewDidAppear(_ animated: Bool) {
-        
+        super.viewDidAppear(animated)
+        if Auth.auth().currentUser != nil {
+            print("\(String(describing: Auth.auth().currentUser))")
+            let storyboard = UIStoryboard(name: "Mains", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "MainTabBarController" ) as! UITabBarController
+            self.present(vc, animated: true, completion: nil)
+            
+        }
         DispatchQueue.main.async {
             
             self.continueButton.addTarget(self, action: #selector(self.handleSignIn), for: .touchUpInside)
             
         }
+        
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
