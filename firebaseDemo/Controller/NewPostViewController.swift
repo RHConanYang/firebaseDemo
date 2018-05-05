@@ -16,7 +16,8 @@ class NewPostViewController:UIViewController, UITextViewDelegate {
     @IBOutlet weak var textView:UITextView!
     @IBOutlet weak var placeHolderLabel: UILabel!
     @IBOutlet weak var cancelButton: UIBarButtonItem!
-
+    @IBOutlet weak var doneButton: UIButton!
+    
 
     
 
@@ -63,8 +64,10 @@ class NewPostViewController:UIViewController, UITextViewDelegate {
         super.viewDidLoad()
         
         cancelButton.tintColor = secondaryColor
+        doneButton.layer.cornerRadius = doneButton.bounds.height / 2
 
         textView.delegate = self
+        
         
     }
     

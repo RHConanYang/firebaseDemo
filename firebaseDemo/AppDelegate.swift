@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let authListener = Auth.auth().addStateDidChangeListener { auth, user in
 
-             if let user = user {
+            if let user = user {
                 UserService.observeUserProfile(user.uid) { userProfile in
                     UserService.currentUserProfile = userProfile
                 }
