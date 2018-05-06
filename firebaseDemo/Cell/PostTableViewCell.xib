@@ -28,15 +28,15 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFs-nu-8UL">
                                         <rect key="frame" x="0.0" y="0.0" width="106.5" height="22"/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="like"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rSg-zE-5gg">
                                         <rect key="frame" x="106.5" y="0.0" width="106" height="22"/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="retweet"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abD-0c-eCg">
                                         <rect key="frame" x="212.5" y="0.0" width="106.5" height="22"/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="profile"/>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -49,9 +49,9 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="K7M-nK-lVh">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="userIcon" translatesAutoresizingMaskIntoConstraints="NO" id="K7M-nK-lVh">
                                 <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.037429042760000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="Eb1-0v-Xs9"/>
                                     <constraint firstAttribute="width" secondItem="K7M-nK-lVh" secondAttribute="height" multiplier="1:1" id="nBV-00-Cgt"/>
@@ -105,4 +105,7 @@
             <point key="canvasLocation" x="65.5" y="130"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="userIcon" width="50" height="50"/>
+    </resources>
 </document>

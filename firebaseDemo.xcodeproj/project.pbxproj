@@ -27,6 +27,9 @@
 		EC8D720220974C2C00BCC39C /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8D720120974C2C00BCC39C /* ImageService.swift */; };
 		EC8D720820974D3900BCC39C /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8D720720974D3900BCC39C /* NewPostViewController.swift */; };
 		ECEB8437209E37DB009709CE /* MyPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEB8436209E37DB009709CE /* MyPostViewController.swift */; };
+		ECEB8439209E6A3C009709CE /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEB8438209E6A3C009709CE /* UserProfileViewController.swift */; };
+		ECEB843B209E6AFA009709CE /* FoundUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEB843A209E6AFA009709CE /* FoundUserViewController.swift */; };
+		ECEB843D209F02FA009709CE /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEB843C209F02FA009709CE /* SearchTableViewCell.swift */; };
 		ECF4945420989FD100632563 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF4945320989FD100632563 /* ProfileViewController.swift */; };
 		ECF494562098A11C00632563 /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF494552098A11C00632563 /* PersonTableViewCell.swift */; };
 		ECF494582098A3CA00632563 /* PersonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECF494572098A3CA00632563 /* PersonTableViewCell.xib */; };
@@ -57,6 +60,9 @@
 		EC8D720120974C2C00BCC39C /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
 		EC8D720720974D3900BCC39C /* NewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
 		ECEB8436209E37DB009709CE /* MyPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPostViewController.swift; sourceTree = "<group>"; };
+		ECEB8438209E6A3C009709CE /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		ECEB843A209E6AFA009709CE /* FoundUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundUserViewController.swift; sourceTree = "<group>"; };
+		ECEB843C209F02FA009709CE /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		ECF4945320989FD100632563 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		ECF494552098A11C00632563 /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
 		ECF494572098A3CA00632563 /* PersonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonTableViewCell.xib; sourceTree = "<group>"; };
@@ -140,6 +146,8 @@
 				EC8D720720974D3900BCC39C /* NewPostViewController.swift */,
 				ECF4945320989FD100632563 /* ProfileViewController.swift */,
 				ECEB8436209E37DB009709CE /* MyPostViewController.swift */,
+				ECEB8438209E6A3C009709CE /* UserProfileViewController.swift */,
+				ECEB843A209E6AFA009709CE /* FoundUserViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -151,6 +159,7 @@
 				EC8D71F92096BA7600BCC39C /* PostTableViewCell.xib */,
 				ECF494572098A3CA00632563 /* PersonTableViewCell.xib */,
 				ECF494552098A11C00632563 /* PersonTableViewCell.swift */,
+				ECEB843C209F02FA009709CE /* SearchTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -289,16 +298,19 @@
 				EC8D71FE2097419400BCC39C /* Post.swift in Sources */,
 				EC8D71EA2095EEC700BCC39C /* SignUpViewController.swift in Sources */,
 				EC8D720820974D3900BCC39C /* NewPostViewController.swift in Sources */,
+				ECEB8439209E6A3C009709CE /* UserProfileViewController.swift in Sources */,
 				ECF4945420989FD100632563 /* ProfileViewController.swift in Sources */,
 				EC8D720020974C0200BCC39C /* UserService.swift in Sources */,
 				ECF494562098A11C00632563 /* PersonTableViewCell.swift in Sources */,
 				EC8D71E22095ED8D00BCC39C /* InitialViewController.swift in Sources */,
+				ECEB843D209F02FA009709CE /* SearchTableViewCell.swift in Sources */,
 				EC8D71DB2095E9C100BCC39C /* HelperExtensions.swift in Sources */,
 				EC8D71F12095F7A500BCC39C /* HomeViewController.swift in Sources */,
 				EC8D720220974C2C00BCC39C /* ImageService.swift in Sources */,
 				EC8D71C92095E91700BCC39C /* AppDelegate.swift in Sources */,
 				EC8D71FA2096BA7600BCC39C /* PostTableViewCell.swift in Sources */,
 				EC8D71EC2095EEED00BCC39C /* ViewController.swift in Sources */,
+				ECEB843B209E6AFA009709CE /* FoundUserViewController.swift in Sources */,
 				EC8D71E82095EE6800BCC39C /* RoundedWhiteButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

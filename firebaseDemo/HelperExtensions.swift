@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Firebase
 
 extension UIButton {
     
@@ -78,3 +79,18 @@ extension UIViewController {
         view.endEditing(true)
     }
 }
+extension UserProfile {
+    func follow(_ otherUser: UserProfile) {
+        let ref = Database.database().reference()
+        ref.child("users/profile/\(otherUser.uid)/followers/").child(self.uid).setValue(true)
+        ref.child("users/profile/\(self.uid)/following/").child(otherUser.uid).setValue(true)
+    }
+    func unfollow(_ otherUser: UserProfile) {
+        let ref = Database.database().reference()
+        ref.child("users/profile/\(otherUser.uid)/followers/").child(self.uid).removeValue()
+        ref.child("users/profile/\(self.uid)/following/").child(otherUser.uid).removeValue()
+    }
+    
+}
+
+
